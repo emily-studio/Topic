@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    .imgboxleft {
+        width: 450px;
+        height: 570px;
+        background-color: rgba(240, 248, 255, 0.671);
+        color: black;
+        display: inline-block
+    }
+
+
+
+    .imgboxright {
+        width: 500px;
+        height: auto;
+        float: right;
+        margin-right: -10px;
+    }
+
+
+    .guideph2 {
+        width: 250px;
+        height: 278px;
+        overflow: hidden;
+        display: inline-block;
+        float: right;
+        padding: 10px;
+
+    }
+
+    .guideph2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <div class="card1 card3">
+
+        <h5 class="phone_title">體驗達人，啟動你的美好旅程</h5>
+        <h2 class="title-2">嚮導介紹</h2>
+        <div class="text text3">
+
+            <div class="tabs-contents">
+                <div class="imgboxleft">
+                    <img src="../img/player03.png" alt="" width="100%" height="auto">
+                    <div class="guideinfo">
+                        <h5>嚮導：潔西卡</h5>
+                        <p>參與訓練：<br>
+                            教育部體育署 大專登山領隊訓練課程
+                            高雄星野登山社初嚮、中嚮訓練
+                            山林秘境高山嚮導訓練</p>
+                        <p>百岳:<br>
+                            玉山後四峰、武陵四秀、奇萊主北、大霸北稜、嘉明湖
+                            雪山翠池、奇萊南華......等高山百岳</p>
+
+                        <div class="guideinfo">
+                            <h5>嚮導：tt</h5>
+                            <p>參與訓練：<br>
+                                教育部體育署 大專登山領隊訓練課程
+                                高雄星野登山社初嚮、中嚮訓練
+                                山林秘境高山嚮導訓練</p>
+                            <p>百岳:<br>
+                                玉山後四峰、武陵四秀、奇萊主北、大霸北稜、嘉明湖
+                                雪山翠池、奇萊南華......等高山百岳</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="imgboxright">
+                <div class="guideph">
+                    <img src="/img/play2.jpg" alt="" width="100%" height="auto">
+                    <img src="/img/play1.jpg" alt="" width="100%" height="auto">
+                    <img src="/img/play3.jpg" alt="" width="100%" height="auto">
+                    <img src="/img/play4.jpg" alt="" width="100%" height="auto">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+        $('.imgboxright img').click(function (e) {
+            console.log('Yes');
+
+            let imgSrc = $(this).attr('src');
+            $('.imgboxleft img').attr('src', imgSrc);
+            $('#guide01').css('display', 'none');
+            $('#guide02').css('display', 'block');
+
+
+        });
+
+    </script>
+
+
+</body>
+
+</html>

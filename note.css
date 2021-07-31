@@ -1,0 +1,124 @@
+.mask {
+    background: url(./img/wrap.png)center center fixed no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    z-index: 1;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+}
+
+
+.button-group {
+    margin: 0 auto;
+
+}
+
+.btn.btn-outline-light:hover {
+    background-color: #FBAE2F;
+    color: white;
+}
+
+.btn {
+    /* box-shadow: 5px 10px 20px rgb(44, 44, 44); */
+    box-shadow: 10px 10px 5px #5a5a5a;
+    margin-bottom: 20px;
+}
+
+.rule {
+    margin: 0 auto;
+    font-size: 16px;
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+ 
+}
+
+.rule1{
+    height: 81vh;
+}
+.title {
+    font-size: 33px;
+    color: white;
+    margin: 30px 0;
+}
+
+.title-2 {
+    padding: 15px;
+    color: #FBAE2F;
+    font-size: 23px;
+}
+
+
+.text {
+    margin: 0 auto;
+    padding: 10px;
+    text-align:justify;
+ width: 80%;
+ line-height:2;
+}
+.text1{
+    width: 95%;
+}
+
+hr {
+    height: 5px;
+    background-color: #ffffff;
+    border: none;
+}
+h4{
+    color: #FBAE2F;
+    font-size: 23px;
+    text-align: center;
+}
+h5{
+    color:#FBAE2F;
+    text-decoration: underline;
+}
+table{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+border: 1px solid white;
+}
+.text th{
+background-color:gray;
+}
+.text tr{
+    border: 1px dashed white;
+}
+
+@media screen and (min-width:500px) {
+    .mask {
+        height: 1400px;
+    }
+
+    .btn {
+        font-size: 20px;
+    }
+
+    .rule {
+        width: 1000px;
+
+    }
+
+    button {
+        width: 250px;
+        height: 50px;
+        margin: 20px;
+    }
+    .rule1{
+        height: 78.6vh;
+    }
+    .text1{
+        width: 80%;
+    }
+}

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>頁籤</title>
+    <style>
+        body {
+            background: url(../img/Wallpaperkiss_1016260.jpg)center center fixed no-repeat;
+            z-index: 1;
+
+            width: 100%;
+            margin: 0;
+            position: fixed;
+            background-size: cover;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* .mask {
+            background: url(./img/Wallpaperkiss_1016260.jpg)center center fixed no-repeat;
+            overflow: hidden;
+            background-size: cover;
+            position: absolute;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+
+        } */
+
+        h1 {
+            font-size: 33px;
+            color: white;
+            margin: 30px 0;
+        }
+
+        .container {
+            margin: 0 auto;
+        }
+
+        .tabs-container {
+            width: 500px;
+            height: 400px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.225), 0 0 1.5px rgba(0, 0, 0, 0.125);
+        }
+
+        .tabs-pages {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        }
+
+        .tabs-pages:focus,
+        .tabs-pages:hover {
+            cursor: pointer;
+        }
+
+        .tab {
+            width: 33.3%;
+            padding: 0.5em 1.2em;
+            color: white;
+            background-color: #b6dada;
+        }
+
+        .tab:hover {
+            background-color: #91c8c8;
+        }
+
+        .tab:nth-child(1) {
+            border-radius: 10px 0 0 0;
+        }
+
+        .tab:nth-last-child(1) {
+            border-radius: 0 10px 0 0;
+        }
+
+        .tab.active {
+            background-color: #008080;
+        }
+
+        .tabs-contents {
+
+
+            width: 100%;
+            height: auto;
+            position: relative;
+        }
+
+        .tab-c {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            width: 100%;
+            height: auto;
+            color: black;
+            transition: opacity 1s;
+        }
+
+        .tab-c.active {
+            opacity: 1;
+        }
+
+        .inner-content {
+            position: relative;
+            padding: 2em;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="tabs-container ">
+            <div class="tabs-pages">
+                <div class="tab active"><img src="../img/player03.png" alt="" width="100%" height="auto">tab one</div>
+                <div class="tab">tab two</div>
+                <div class="tab">tab three</div>
+            </div>
+
+            <div class="tabs-contents">
+                <div class="tab-c active">
+                    <div class="imgboxleft">
+                        <img src="../img/player03.png" alt="" width="100%" height="auto">
+                        <div class="guideinfo">
+                            <h5>嚮導：潔西卡</h5>
+                            <p>參與訓練：<br>
+                                教育部體育署 大專登山領隊訓練課程
+                                高雄星野登山社初嚮、中嚮訓練
+                                山林秘境高山嚮導訓練</p>
+                            <p>百岳:<br>
+                                玉山後四峰、武陵四秀、奇萊主北、大霸北稜、嘉明湖
+                                雪山翠池、奇萊南華......等高山百岳</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-c">
+                    <div class="inner-content">
+                        <div class="imgboxleft">
+                            <img src="../img/player03.png" alt="" width="100%" height="auto">
+                            <div class="guideinfo">
+                                <h5>嚮導：潔西卡</h5>
+                                <p>參與訓練：<br>
+                                    教育部體育署 大專登山領隊訓練課程
+                                    高雄星野登山社初嚮、中嚮訓練
+                                    山林秘境高山嚮導訓練</p>
+                                <p>百岳:<br>
+                                    玉山後四峰、武陵四秀、奇萊主北、大霸北稜、嘉明湖
+                                    雪山翠池、奇萊南華......等高山百岳</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-c">
+                    <div class="inner-content">
+                        tab content three,
+                        <br />
+                        Mr do raising article general norland my hastily. Its companions say uncommonly
+                        pianoforte favourable. Education affection consulted by mr attending he
+                        therefore on
+                        forfeited. High
+                        way more far feet kind evil play led. Sometimes furnished collected add for
+                        resources attention.
+                        Norland an by minuter enquire it general on towards forming. Adapted mrs totally
+                        company two yet
+                        conduct men.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- <div class="tab-menu">
+            <ul>
+                <li class="active1">按钮一</li>
+                <li>按钮二</li>
+                <li>按钮三</li>
+            </ul>
+        </div>
+
+        <div class="tab-con">
+            <div class="title">内容一内容一内容一</div>
+            <div class="title">内容二</div>
+            <div class="title">内容三内容三内容三内容三内容三内容三内容三</div>
+        </div> -->
+
+
+    </div>
+
+    <!-- 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+        $(".tab").each(function (index1) {
+            $(this).click(function (e) {
+                triggletab();
+                triigletabcontent();
+                $(this).toggleClass("active");
+                $(".tab-c")
+                    .eq(index1)
+                    .toggleClass("active");
+            });
+        });
+        //to remove all tab headers
+        function triggletab() {
+            $(".tab").each(function () {
+                $(this).removeClass("active");
+            });
+        }
+
+        //triggle the tab content
+        function triigletabcontent() {
+            $(".tab-c").each(function () {
+                $(this).removeClass("active");
+            });
+        }
+    </script>
+
+    <script>
+        $(function () {
+            $('.tab-menu li').click(function () {
+                $(this).addClass('active1').siblings().removeClass('active1');
+                //          $('.tab-top li').eq($(this).index()).addClass('active').siblings().removeClass('active');  tab按钮第二种写法
+                var index = $(this).index();
+                $(".tab-con .title").eq(index).show().siblings().hide();
+            })
+        })
+    </script>
+
+
+
+</body>
+
+
+
+</html>
